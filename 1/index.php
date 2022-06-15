@@ -38,8 +38,8 @@ $startScript = $data['about'];
         </div>
         <div class="content">
             <p class="par">Желаемая должность и заработная плата</p>
-            <p>Должность: не определился</p>
-            <p>Зарплата: без ограничений</p>
+            <p>Должность: <?=$startScript['work'] ?></p>
+            <p>Зарплата: <?=$startScript['Salary'] ?></p>
         </div>
 
         <div class="footer_left" align="left">
