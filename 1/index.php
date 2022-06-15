@@ -1,3 +1,7 @@
+<?
+$data = include_once('script.php');
+$startScript = $data['about'];
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -14,16 +18,17 @@
             <h1 align="center">Резюме</h1>
         </div>
         <div class="info">
-            <h2>Шамшин Максим Денисович</h2>
+            <h2><?=$startScript['name'] ?></h2>
             <div class="info_list">
-                <p>Мужчина, 16 лет, родился 12 января 2006 года</p>
-                <p>При наличии необходимого времени,смогу сделать почти всё</p>
-                <p>Умения на данный момент<ul>
-                    <li>Знаю основы таких языков как: Python, C#</li>
-                    <li>Есть познания в ИИ</li>
-                    <li>Могу написать телеграм-бота</li>
+                <p><?=$startScript['info'] ?></p>
+                <p><?=$startScript['can'] ?></p>
+                <p><?=$startScript['skills'] ?><ul>
+                    <li><?=$startScript['skill1'] ?></li>
+                    <li><?=$startScript['skill2'] ?></li>
+                    <li><?=$startScript['skill3'] ?></li>
                 </ul></p>
-        </div>
+                <p><?=$startScript['extraInfo'] ?></p>
+                </div>
         </div>
         <div class="photo">
             <p class="par">Основные сведения</p>
